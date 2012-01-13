@@ -34,7 +34,7 @@ class RailsSettingsGenerator < Rails::Generators::Base
     tmp.write migration
     tmp.close
 
-    migration_template  '../../../tmp/~migration_ready.rb',
+    migration_template  "#{Rails.root}/tmp/~migration_ready.rb",
                         'db/migrate/create_rails_settings_tables.rb'
     remove_file 'tmp/~migration_ready.rb'
   end
