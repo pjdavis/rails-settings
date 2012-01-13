@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'rails-settings/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'ledermann-rails-settings'
+  s.name        = 'rails-settings'
   s.version     = RailsSettings::VERSION
   s.authors     = ['Georg Ledermann']
   s.email       = ['mail@georg-ledermann.de']
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Settings management for ActiveRecord objects}
   s.description = %q{Ruby Gem that makes managing a table of key/value pairs easy. Think of it like a Hash stored in you database, that uses simple ActiveRecord like methods for manipulation.}
 
-  s.rubyforge_project = 'ledermann-rails-settings'
+  s.rubyforge_project = 'rails-settings'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
