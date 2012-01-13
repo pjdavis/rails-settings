@@ -1,4 +1,4 @@
-class CreateRailsSettingsTables < ActiveRecord::Migration
+class CreateSettings < ActiveRecord::Migration
   def self.up
     create_table :settings, :force => true do |t|
       t.string  :var,         :null => false
